@@ -3,6 +3,7 @@ from datetime import date
 
 import streamlit as st
 
+from src.auth import require_login
 from src.db import (
     CATEGORIES_DESPESA,
     CATEGORIES_INGRES,
@@ -12,6 +13,7 @@ from src.db import (
 )
 
 st.set_page_config(page_title="Afegir moviment", page_icon="➕")
+require_login()
 st.title("➕ Afegir moviment")
 
 # El tipus va FORA del formulari perquè el desplegable de categoria

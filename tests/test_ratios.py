@@ -7,11 +7,11 @@ from src.ratios import calcular_resum
 def test_resum_basic():
     df = pd.DataFrame(
         [
-            {"tipus": "ingrés", "import": 3000.0, "categoria": "Nòmina", "qui": "Jo",
+            {"tipus": "ingrés", "import": 3000.0, "categoria": "Nòmina", "qui": "Eloi",
              "data": pd.Timestamp("2026-09-01")},
-            {"tipus": "despesa", "import": 1000.0, "categoria": "Habitatge", "qui": "Jo",
+            {"tipus": "despesa", "import": 1000.0, "categoria": "Habitatge", "qui": "Eloi",
              "data": pd.Timestamp("2026-09-02")},
-            {"tipus": "despesa", "import": 500.0, "categoria": "Alimentació", "qui": "Parella",
+            {"tipus": "despesa", "import": 500.0, "categoria": "Alimentació", "qui": "Ariana",
              "data": pd.Timestamp("2026-09-03")},
         ]
     )

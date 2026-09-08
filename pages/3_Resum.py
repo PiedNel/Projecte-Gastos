@@ -1,11 +1,13 @@
 """Pàgina de resum mensual + descàrrega Excel."""
 import streamlit as st
 
+from src.auth import require_login
 from src.db import get_moviments
 from src.excel_export import generar_excel
 from src.ratios import calcular_resum, filtrar_mes
 
 st.set_page_config(page_title="Resum mensual", page_icon="📊")
+require_login()
 st.title("📊 Resum mensual i Excel")
 
 df = get_moviments()

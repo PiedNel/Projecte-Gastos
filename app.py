@@ -2,10 +2,12 @@
 import streamlit as st
 import plotly.express as px
 
+from src.auth import require_login
 from src.db import get_moviments
 from src.ratios import calcular_resum, comparativa_mes_anterior, filtrar_mes
 
 st.set_page_config(page_title="Despeses de casa", page_icon="🏠", layout="wide")
+require_login()
 st.title("🏠 Despeses de casa")
 
 df = get_moviments()
