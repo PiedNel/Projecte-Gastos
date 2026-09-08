@@ -1,6 +1,6 @@
 # Despeses de casa 🏠
 
-App Streamlit (Eloi/Ariana) per gestionar ingressos i despeses de la llar.
+App Streamlit per gestionar ingressos i despeses de la llar.
 Funciona en local amb SQLite i al mòbil via Streamlit Cloud + Supabase.
 
 ## Instal·lar i executar (local)
